@@ -35,15 +35,11 @@ abstract class House {
 }
 
 class MyHouse extends House {
-  constructor(key: Key) {
-    super(key);
-  }
-
   openDoor(key: Key): void {
-    if (this.key.getSignature() === key.getSignature()) {
-      this.door = true;
-    }
+  if (this.key.getSignature() === key.getSignature()) {
+    this.door = true;
   }
+}
 }
 
 const key = new Key();
